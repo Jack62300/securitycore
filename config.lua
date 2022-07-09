@@ -40,7 +40,7 @@ Config.AllowList = {
 Config.apiUrl = "http://check.getipintel.net/check.php?ip=" 
 
 -- Email to connect the API's (Must be the one you registered with)
-Config.email = "devunity62400@gmail.com"
+Config.email = ""
 
 
 -- Url API to test the ISP & Country Code (We recommand to keep this one)
@@ -51,19 +51,19 @@ Config.apiUrl2 = "http://ip-api.com/json/"
 ---------------------
 
 -- Discord url to display for the player if he has an error
-Config.discordUrl =  "https://discord.gg/xJmq9TQKDQ"
+Config.discordUrl =  ""
 
 -- Title of the discord bot (Footer)
-Config.discordfooter = "Bloodycity"
+Config.discordfooter = ""
 
 -- Name of the discord Bot
 Config.botUsername = "INSPECTOR 2000"
 
 -- Discord WebHook to receive logs of the security script
-Config.webhooks = "https://discord.com/api/webhooks/914572024884629625/k4-lOfCZdI3O27bOaO5TWyJaA395xXx2uAQn99vSFXCs1uO4bU8N-lgvOxGxOIjR7qAA"
+Config.webhooks = ""
 
 -- Profile Picture of the bot 
-Config.avatarUrl = "https://png.pngtree.com/template/20190717/ourlarge/pngtree-security-guard-logo-design-vector--shield-key-look-image_230013.jpg"
+Config.avatarUrl = ""
 
 ---------------
 -- Languages --
