@@ -48,6 +48,14 @@ if Config['activeSecurity'] == true then
             elseif Config.identifer == "licence" then
                 playerIdentifier = GetPlayerIdentifiers(source)[2]
             end
+                
+                for k,v in ipairs(Config.AllowList) do
+                print(v)
+                    if playerIP == v then
+                        deferrals.done()
+                        return
+                    end
+                end
            
             if string.match(playerIP, ":") then
                 playerIP = splitString(playerIP, ":")[1]
@@ -58,13 +66,7 @@ if Config['activeSecurity'] == true then
                 return
             else
                 local probability = 0
-                for k,v in ipairs(Config.AllowList) do
-                print(v)
-                    if playerIP == v then
-                        deferrals.done()
-                        return
-                    end
-                end
+                
                 
                 PerformHttpRequest(Config['apiUrl'] .. '' .. playerIP ..'&contact=' .. ownerEmail .. '&flags=' ..flags, function(statusCode, response, headers)
                     if response then
